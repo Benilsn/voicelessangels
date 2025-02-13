@@ -1,0 +1,58 @@
+{#fragment id=head}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{pageTitle}</title>
+
+    <link rel="icon" href="../../static/images/favicon.png" type="image"/>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <style>
+        /* Modern Hover Effect for Navbar Links and Buttons */
+        .navbar-nav .nav-link, .navbar-toggler-icon, .btn {
+            position: relative;
+            transition: all 0.3s ease-in-out; /* Smooth transition */
+        }
+
+        /* Change text color and underline effect on hover */
+        .navbar-nav .nav-link:hover,
+        .navbar-toggler-icon:hover,
+        .btn:hover {
+            color: #fff !important; /* White color on hover */
+        }
+
+        /* Adding a modern underline effect */
+        .navbar-nav .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 2px;
+            background-color: #ff0; /* Yellow underline color */
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .navbar-nav .nav-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        /* Button hover background color change */
+        .btn:hover {
+            background-color: #ff0; /* Change button background to yellow */
+            border-color: #ff0; /* Button border color to match the background */
+            color: #333; /* Change text color to dark for contrast */
+        }
+    </style>
+</head>
+
+{/fragment}
