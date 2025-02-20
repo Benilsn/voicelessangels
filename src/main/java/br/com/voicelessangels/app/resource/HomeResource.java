@@ -10,7 +10,7 @@ public class HomeResource {
     @GET
     public TemplateInstance homePage() {
         return Templates.home()
-                .data("pageTitle", "Home")
+                .data("pageTitle", "Incio")
                 .data("name", "Test");
     }
 }
